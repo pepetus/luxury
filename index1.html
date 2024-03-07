@@ -8,319 +8,430 @@
 
     <script src="https://kit.fontawesome.com/07dc49e1b9.js" crossorigin="anonymous"></script>
 
+    <style>
+        #gg_parent {
+            border: 2px solid red;
+            width: 1920px;
+            height: 3000px;
 
+        }
+
+        /* header div of this page */
+        .topheading {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 25px;
+            padding-left: 213px;
+            padding-right: 213px;
+        }
+
+        .topmenu-list {
+            display: flex;
+            gap: 100px;
+        }
+
+        span {
+            text-decoration: underline;
+        }
+
+        .complimentary {
+            display: flex;
+            margin-top: 7rem;
+            padding-left: 213px;
+            padding-right: 213px;
+        }
+
+        .title_text-1 {
+            font-size: 50px;
+            font-weight: 400;
+            font-family: Montserrat;
+            color: #ffffff;
+        }
+
+        .title_text-2 {
+            font-size: 154px;
+            font-weight: 700;
+            font-family: Adobe Garamond Pro;
+            color: #ffffff;
+        }
+
+        .title_text-3 {
+            font-size: 72px;
+            font-weight: 700;
+            font-family: Adobe Garamond Pro;
+            color: #ffffff;
+        }
+
+        .title_text-4 {
+            font-size: 25px;
+            font-weight: 400;
+            font-family: Montserrat;
+            color: #ffffff;
+        }
+
+        .booking-point {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .booking-button {
+            background-color: #E0B973;
+            justify-content: center;
+            border-radius: 5px;
+            margin-top: 7rem;
+            color: white;
+            width: 268px;
+            height: 78px;
+            border: none;
+        }
+
+        .booking_text {
+            font-size: 25px;
+            font-weight: 700;
+            text-align: center;
+            font-family: Montserrat;
+            color: #ffffff;
+        }
+
+        .scroll_text {
+            font-size: 25px;
+            font-weight: 700;
+            margin-top: 7rem;
+            font-family: Montserrat;
+            color: #ffffff;
+        }
+
+        .scroll_botton {
+            font-size: 25px;
+            font-weight: 700;
+            margin-top: 1rem;
+            font-family: Montserrat;
+            color: #ffffff;
+        }
+
+        .detail_text {
+            font-size: 36px;
+            font-weight: 400;
+            border: none;
+            width: 1920px;
+            text-align: center;
+            margin-top: 2rem;
+            font-family: Montserrat;
+            color: #14274A;
+        }
+
+        .luuray_details {
+            display: flex;
+            color: white;
+            font-size: 25px;
+            border: none;
+            width: 1570px;
+            margin-top: 3rem;
+            margin-left: 150px;
+            gap: 150px;
+        }
+
+        /*.... luxury column......*/
+        .ray_details {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: 25px;
+            border: none;
+            padding-left: 50px;
+            width: 542px;
+            height: 350px;
+            margin-top: 8rem;
+            gap: 30px;
+        }
+
+        .lu_lines {
+            display: flex;
+            gap: 3px;
+        }
+
+        .line {
+
+            border-left: 2px solid #14274A;
+            height: 334px;
+            margin-top: 138px;
+
+        }
+
+        /*.......the second border.........!!!*/
+
+        .xxluuray_details {
+            display: flex;
+            color: white;
+            font-size: 25px;
+            border: none;
+            width: 1570px;
+            margin-top: 3rem;
+            margin-left: 150px;
+            gap: 150px;
+        }
+
+        /*.... luxury column......*/
+        .bray_details {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: 25px;
+            border: none;
+            padding-left: 50px;
+            width: 542px;
+            gap: 10px;
+        }
+
+        .luxxx_lines {
+            display: flex;
+            gap: 3px;
+        }
+
+        .sline {
+
+            border-left: 2px solid #14274A;
+            height: 433px;
+
+
+        }
+
+        /*....end point......*/
+
+        .content_text-1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin-top: 0rem;
+            font-family: Montserrat;
+            color: #14274A;
+        }
+
+        .content_text-2 {
+            font-size: 25px;
+            font-weight: 400;
+            margin-top: 1rem;
+            font-family: Montserrat;
+            color: #14274A;
+        }
+
+        .content-button {
+            background-color: #E0B973;
+            justify-content: center;
+            border-radius: 5px;
+            margin-top: 1rem;
+            color: white;
+            width: 238px;
+            height: 63px;
+            border: none;
+        }
+
+        .content_text-3 {
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+            font-family: Montserrat;
+            color: #ffffff;
+        }
+
+        .testimonia {
+            display: flex;
+            flex-direction: column;
+            border: none;
+            width: 1920px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+        }
+
+        .test_text-1 {
+            font-size: 60px;
+            font-weight: 700;
+            font-family: Montserrat;
+            color: #14274A;
+        }
+
+        .test_text-2 {
+            font-size: 30px;
+            font-weight: 400;
+            font-family: Montserrat;
+            color: #14274A;
+        }
+
+        .test_text-3 {
+            font-size: 25px;
+            font-weight: 400;
+            font-family: Montserrat;
+            color: #14274A;
+        }
+
+        .direction {
+            display: flex;
+            font-size: 25px;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .last-button-1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #E0B973;
+            border-radius: 10px;
+            color: #ffffff;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
+        .last-button-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #E0B973;
+            border-radius: 10px;
+            color: #ffffff;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
+        #ending_sheeet {
+            position: absolute;
+            width: 1920px;
+            background: #14274A;
+            clip-path: polygon(0.00% 100.00%, 100.00% 100.00%, 100.00% 30.00%, 53.00% 30.00%, 50.00% 18.00%, 47.00% 30.00%, 0.00% 30.00%);
+        }
+
+        /*..... This the grand parent of this 
+        particular div.......!!!!!!!*/
+        .inquiry_shader-gp {
+            display: flex;
+            align-items: center;
+            margin-top: 5rem;
+            gap: 150px;
+            border: none;
+            width: 1720px;
+            height: 200px;
+            padding-left: 200px
+        }
+
+        /*..... This the...... (parent_1 & children).....
+      of this particular div.......*/
+        .p_inquiry_shader-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .child_1_text-p1 {
+            font-size: 25px;
+            font-weight: 700;
+            font-family: Montserrat;
+            color: white;
+        }
+
+        .child_2_text-p1 {
+            font-size: 15px;
+            font-weight: 700;
+            font-family: Montserrat;
+            color: white;
+        }
+
+        .child_3_text-p1 {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: Montserrat;
+            color: white;
+        }
+
+        /*..... This the...... (parent_2 & son).....
+      of this particular div.......*/
+        .p_inquiry_shader-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .son_1_text-p2 {
+            font-size: 20px;
+            font-weight: 400;
+            font-family: Montserrat;
+            color: white;
+        }
+
+
+        /*..... This the...... (parent_3 & same son with initial).....
+      of this particular div.......*/
+        .p_inquiry_shader-3 {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .so_1_text-p2 {
+            font-size: 20px;
+            font-weight: 400;
+            font-family: Montserrat;
+            color: white;
+        }
+
+        /*.....this div is for icons in parent_3.....*/
+        .newicon_boox {
+            display: flex;
+            align-items: center;
+            border: none;
+            width: 360px;
+            height: 40px;
+            gap: 15px;
+        }
+
+        /*..... This the...... (parent_4 & same son with initial).....
+      of this particular div.......*/
+        .p_inquiry_shader-4 {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .on_1_text-p2 {
+            font-size: 20px;
+            font-weight: 400;
+            font-family: Montserrat;
+            color: white;
+        }
+
+
+        /*..... this div is for the click box input.......*/
+        .click_boox {
+            display: flex;
+        }
+
+        .email {
+            display: flex;
+            align-items: center;
+            border: 2px solid #E0B973;
+            width: 260px;
+            height: 52px;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+
+        .ok {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 52px;
+            text-align: center;
+            border: 2px solid #E0B973;
+            margin-top: 20px;
+            background-color: #E0B973;
+        }
+    </style>
 </head>
-<style>
-    /* header div of this page */
-    .topheading {
-        display: flex;
-        justify-content: space-between;
-        color: white;
-        font-size: 25px;
-        padding-left: 213px;
-        padding-right: 213px;
-    }
-
-    .topmenu-list {
-        display: flex;
-        gap: 100px;
-    }
-
-    span {
-        text-decoration: underline;
-    }
-
-    .complimentary {
-        display: flex;
-        margin-top: 7rem;
-        padding-left: 213px;
-        padding-right: 213px;
-    }
-
-    .title_text-1 {
-        font-size: 50px;
-        font-weight: 400;
-        font-family: Montserrat;
-        color: #ffffff;
-    }
-
-    .title_text-2 {
-        font-size: 154px;
-        font-weight: 700;
-        font-family: Adobe Garamond Pro;
-        color: #ffffff;
-    }
-
-    .title_text-3 {
-        font-size: 72px;
-        font-weight: 700;
-        font-family: Adobe Garamond Pro;
-        color: #ffffff;
-    }
-
-    .title_text-4 {
-        font-size: 25px;
-        font-weight: 400;
-        font-family: Montserrat;
-        color: #ffffff;
-    }
-
-    .booking-point {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .booking-button {
-        background-color: #E0B973;
-        justify-content: center;
-        border-radius: 5px;
-        margin-top: 7rem;
-        color: white;
-        width: 268px;
-        height: 78px;
-        border: none;
-    }
-
-    .booking_text {
-        font-size: 25px;
-        font-weight: 700;
-        text-align: center;
-        font-family: Montserrat;
-        color: #ffffff;
-    }
-
-    .scroll_text {
-        font-size: 25px;
-        font-weight: 700;
-        margin-top: 7rem;
-        font-family: Montserrat;
-        color: #ffffff;
-    }
-
-    .scroll_botton {
-        font-size: 25px;
-        font-weight: 700;
-        margin-top: 1rem;
-        font-family: Montserrat;
-        color: #ffffff;
-    }
-
-    .detail_text {
-        font-size: 36px;
-        font-weight: 400;
-        text-align: center;
-        margin-top: 2rem;
-        font-family: Montserrat;
-        color: hsl(0, 0%, 0%);
-    }
-
-    .luuray_details {
-        display: flex;
-        color: white;
-        font-size: 25px;
-        margin-top: 3rem;
-        gap: 300px;
-        padding-left: 100px;
-        padding-right: 100px;
-
-    }
-
-    .content_text-1 {
-        font-size: 60px;
-        font-weight: 700;
-        margin-top: 1rem;
-        font-family: Montserrat;
-        color: #000000;
-    }
-
-    .content_text-2 {
-        font-size: 25px;
-        font-weight: 400;
-        margin-top: 1rem;
-        font-family: Montserrat;
-        color: #000000;
-    }
-
-    .content-button {
-        background-color: #E0B973;
-        justify-content: center;
-        border-radius: 5px;
-        margin-top: 1rem;
-        color: white;
-        width: 238px;
-        height: 63px;
-        border: none;
-    }
-
-    .content_text-3 {
-        font-size: 20px;
-        font-weight: 400;
-        text-align: center;
-        font-family: Montserrat;
-        color: #ffffff;
-    }
-
-    .testimonia {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5rem;
-    }
-
-    .test_text-1 {
-        font-size: 60px;
-        font-weight: 700;
-        font-family: Montserrat;
-        color: #b91e1e;
-    }
-
-    .test_text-2 {
-        font-size: 30px;
-        font-weight: 400;
-        font-family: Montserrat;
-        color: #7a0c0c;
-    }
-
-    .test_text-3 {
-        font-size: 25px;
-        font-weight: 400;
-        font-family: Montserrat;
-        color: #540909;
-    }
-
-    .direction {
-        display: flex;
-        font-size: 25px;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .last-button-1 {
-        background-color: none;
-        border-radius: 10px;
-        color: rgb(213, 24, 24);
-        width: 50px;
-        height: 50px;
-        text-align: center;
-    }
-
-    .last-button-2 {
-        background-color: none;
-        border-radius: 10px;
-        color: rgb(136, 33, 33);
-        width: 50px;
-        height: 50px;
-        text-align: center;
-    }
-
-  
-    /*..... This the grand parent of this 
-    particular div.......!!!!!!!*/
-    .inquiry_shader-gp {
-        display: flex;
-        align-items: center;
-        margin-top: 5rem;
-        gap: 300px;
-        border: 10px solid #14274A;
-        padding-left: 200px;
-        padding-right: 200px;
-        width: 1920px;
-        height: 320px;
-
-    }
-
-    /*..... This the...... (parent_1 & children).....
-  of this particular div.......*/
-    .p_inquiry_shader-1 {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .child_1_text-p1 {
-        font-size: 25px;
-        font-weight: 700;
-        font-family: Montserrat;
-        color: #b91e1e;
-    }
-
-    .child_2_text-p1 {
-        font-size: 15px;
-        font-weight: 700;
-        font-family: Montserrat;
-        color: #7a0c0c;
-    }
-
-    .child_3_text-p1 {
-        font-size: 14px;
-        font-weight: 400;
-        font-family: Montserrat;
-        color: #540909;
-    }
-
-    /*..... This the...... (parent_2 & son).....
-  of this particular div.......*/
-    .p_inquiry_shader-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
-    .son_1_text-p2 {
-        font-size: 20px;
-        font-weight: 400;
-        font-family: Montserrat;
-        color: #b91e1e;
-    }
-
-
-    /*..... This the...... (parent_3 & same son with initial).....
-  of this particular div.......*/
-    .p_inquiry_shader-3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 7px;
-    }
-
-    /*.....this div is for icons in parent_3.....*/
-    .newicon_boox {
-        display: flex;
-        align-items: center;
-        border: none;
-        width: 360px;
-        height: 40px;
-        gap: 7px;
-    }
-
-    /*..... This the...... (parent_4 & same son with initial).....
-  of this particular div.......*/
-    .p_inquiry_shader-4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 7px;
-
-    }
-
-    /*..... this div is for the click box input.......*/
-    .click_boox {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        border: 5px solid #E0B973;
-        width: 360px;
-        height: 52px;
-        gap: 200px;
-        margin-top: 8px;
-    }
-</style>
 
 <body>
     <div style='background-image: url("./tools/mask group.png"); width: 1920px; height: 1080px;'>
@@ -340,6 +451,7 @@
                 </div>
 
                 <div>
+
                     <h3>Facilities</h3>
 
                 </div>
@@ -396,62 +508,73 @@
 
     <div class="luuray_details">
 
-        <div class="content_text-1">
+        <div class="lu_lines">
+            <div class="line"> </div>
 
-            Luxury redefined
+            <div class="ray_details">
 
-            <div class="content_text-2">
-                Our rooms are designed to transport <br>
-                you into an environment made for leisure. <br>
-                Take your mind off the day-to-day of home <br>
-                life and find a private paradise for yourself.
+                <div class="content_text-1">Luxury redefined </div>
+
+                <div class="content_text-2">
+                    Our rooms are designed to transport <br>
+                    you into an environment made for leisure. <br>
+                    Take your mind off the day-to-day of home <br>
+                    life and find a private paradise for yourself.
+                </div>
+
+                <button class="content-button">
+                    <div class="content_text-3">EXPLORE</div>
+                </button>
+
             </div>
 
-            <button class="content-button">
-                <div class="content_text-3">EXPLORE</div>
-            </button>
-
         </div>
-
-
-
 
 
         <div>
             <img src="tools/steven-ungermann-aRT5UCf2MYY-unsplash.png" alt="steven-ungermann-aRT5UCf2MYY-unsplash"
-                width="866px" height="579px">
-
+                width="100%" height="100%">
         </div>
 
     </div>
 
-    <div class="luuray_details">
 
-        <div class="content_text-1">
 
-            Leave your worries in <br> the sand
 
-            <div class="content_text-2">
-                We love life at the beach. Being close <br>
-                to the ocean with access to endless sandy <br>
-                beach ensures a relaxed state of mind. It <br>
-                seems like time stands still watching the
-                ocean.
+    <div class="xxluuray_details">
+
+        <div class="luxxx_lines">
+            <div class="sline"> </div>
+
+            <div class="bray_details">
+
+                <div class="content_text-1">Leave your worries in <br> the sand</div>
+
+                <div class="content_text-2">
+                    We love life at the beach. Being close <br>
+                    to the ocean with access to endless sandy <br>
+                    beach ensures a relaxed state of mind. It <br>
+                    seems like time stands still watching the
+                    ocean.
+                </div>
+
+                <button class="content-button">
+                    <div class="content_text-3">EXPLORE</div>
+                </button>
+
             </div>
 
-            <button class="content-button">
-                <div class="content_text-3">EXPLORE</div>
-            </button>
-
         </div>
 
-        <div>
-            <img src="tools/andrew-ruiz-fmz-B9At9iQ-unsplash.png" alt="andrew-ruiz-fmz-B9At9iQ-unsplash" width="866px"
-                height="487px">
 
+        <div>
+            <img src="tools/andrew-ruiz-fmz-B9At9iQ-unsplash.png" alt="andrew-ruiz-fmz-B9At9iQ-unsplash" width="100%"
+                height="100%">
         </div>
 
     </div>
+
+
 
     <div class="testimonia">
 
@@ -467,98 +590,88 @@
 
 
         <div class="direction">
-            <div class="last-button-1"> <i class='fa-sharp fa-solid fa-circle-chevron-left'
-                    style='font-size:50px;color:#E0B973'></i>
-            </div>
-            <div class="last-button-2">
-                <i class='fa-sharp fa-solid fa-circle-chevron-right' style='font-size:50px;color:#E0B973'></i>
+            <div class="last-button-1">
+                < </div>
+                    <div class="last-button-2">
+
+                        >
+                    </div>
+
+
             </div>
 
         </div>
 
     </div>
 
-    <div class="inquiry_shader-gp">
+    <div id="ending_sheeet">
 
-        <div class="p_inquiry_shader-1">
+        <div class="inquiry_shader-gp">
 
-            <div class="child_1_text-p1">LUXURY</div>
+            <div class="p_inquiry_shader-1">
 
-            <div class="child_2_text-p1">HOTELS</div>
+                <div class="child_1_text-p1">LUXURY</div>
 
-            <div class="child_3_text-p1">
-                497 Evergreen Rd. Roseville, CA 95673<br>
-                +44 345 678 903<br>
-                luxury_hotels@gmail.com
+                <div class="child_2_text-p1">HOTELS</div>
+
+                <div class="child_3_text-p1">
+                    497 Evergreen Rd. Roseville, CA 95673<br>
+                    +44 345 678 903<br>
+                    luxury_hotels@gmail.com
+                </div>
+
+            </div>
+
+            <div class="p_inquiry_shader-2">
+
+                <div class="son_1_text-p2">About Us</div>
+                <div class="son_1_text-p2">Contact</div>
+                <div class="son_1_text-p2">Terms & Conditions</div>
+
+            </div>
+
+            <div class="p_inquiry_shader-3">
+
+                <div class="newicon_boox">
+                    <div><i class='fa-brands fa-facebook' style='font-size:16px;color:white'></i></div>
+                    <div class="so_1_text-p2">Facebook</div>
+                </div>
+
+                <div class="newicon_boox">
+                    <div><i class='fa-brands fa-twitter' style='font-size:16px;color:white'></i></div>
+                    <div class="so_1_text-p2">Twitter</div>
+                </div>
+
+                <div class="newicon_boox">
+                    <div><i class='fa-brands fa-instagram' style='font-size:16px;color:white'></i></div>
+                    <div class="so_1_text-p2">Instagram</div>
+                </div>
+
+
+            </div>
+
+            <div class="p_inquiry_shader-4">
+
+                <div class="son_1_text-p2">Subscribe to our newsletter</div>
+
+                <div class="click_boox">
+
+                    <div class="email">
+                        <div class="on_1_text-p2">Email Address</div>
+                    </div>
+
+                    <div class="ok">
+                        <div class="on_1_text-p2">OK</div>
+                    </div>
+
+
+                </div>
+
             </div>
 
         </div>
-
-        <div class="p_inquiry_shader-2">
-
-            <div class="son_1_text-p2">About Us</div>
-            <div class="son_1_text-p2">Contact</div>
-            <div class="son_1_text-p2">Terms & Conditions</div>
-
-        </div>
-
-        <div class="p_inquiry_shader-3">
-
-            <div class="newicon_boox">
-                <div><i class='fa-brands fa-facebook' style='font-size:16px;color:#3615ee'></i></div>
-                <div class="son_1_text-p2">Facebook</div>
-            </div>
-
-            <div class="newicon_boox">
-                <div><i class='fa-brands fa-twitter' style='font-size:16px;color:#3615ee'></i></div>
-                <div class="son_1_text-p2">Twitter</div>
-            </div>
-
-            <div class="newicon_boox">
-                <div><i class='fa-brands fa-instagram' style='font-size:16px;color:#3615ee'></i></div>
-                <div class="son_1_text-p2">Instagram</div>
-            </div>
-
-
-        </div>
-
-        <div class="p_inquiry_shader-4">
-
-            <div class="son_1_text-p2">Subscribe to our newsletter</div>
-
-            <div class="click_boox">
-
-                <div class="son_1_text-p2">Email Address</div>
-                <div class="son_1_text-p2">OK</div>
-
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
-
-
 </body>
 
 </html>
