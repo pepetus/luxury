@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Input tag </title>
+
+    <script src="https://kit.fontawesome.com/07dc49e1b9.js" crossorigin="anonymous"></script>
+
+    <style>
+        .backgroud {
+            border: 6px solid rgba(250, 250, 250, 0.901);
+            background-color: rgba(250, 250, 250, 0.901);
+            width: 525px;
+            height: 525px;
+        }
+
+        .input_tags {
+            display: flex;
+            flex-direction: column;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .email_box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .email-content_text {
+            display: flex;
+            border: none;
+            margin-top: 2rem;
+            padding-left: 7px;
+        }
+
+        .email-input_box {
+            display: flex;
+            background-color: white;
+            border: 2px solid rgba(227, 220, 220, 0.834);
+            border-radius: 10px;
+            width: 300px;
+            height: 40px;
+            padding-left: 7px;
+            align-items: center;
+            margin-top: 4px;
+        }
+
+        .password_box {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.2rem;
+        }
+
+        .password-content_text {
+            display: flex;
+            border: none;
+            padding-left: 7px;
+            gap: 5px;
+        }
+
+
+        .view {
+            display: flex;
+            background-color: white;
+            border: 2px solid rgba(227, 220, 220, 0.834);
+            border-radius: 10px;
+            width: 300px;
+            height: 40px;
+            padding-left: 7px;
+            align-items: center;
+            margin-top: 4px;
+            gap: 8.5rem;
+        }
+
+        .question {
+            display: flex;
+            border: none;
+            border-radius: 10px;
+            width: 300px;
+            height: 40px;
+            padding-left: 7px;
+            align-items: center;
+            margin-top: 4px;
+            gap: 3.9rem;
+
+        }
+
+        .request {
+            display: flex;
+            border: none;
+            padding-left: 7px;
+            align-items: center;
+            margin-top: 4px;
+            gap: 5px;
+        }
+
+        .forgot_color {
+            color: red;
+        }
+
+        .tickbox {
+            border: 3px solid rgba(227, 220, 220, 0.834);
+            background-color: white;
+            width: 10px;
+            height: 10px;
+        }
+
+
+        .signin {
+            display: flex;
+            background-color: blue;
+            color: white;
+            border: 4px solid blue;
+            border-radius: 10px;
+            width: 300px;
+            height: 40px;
+            padding-left: 7px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="backgroud">
+        <div class="input_tags">
+            <div class="email_box">
+                <div class="email-content_text"> Email</div>
+                <div class="email-input_box">example@gmail.com</div>
+            </div>
+
+            <div class="password_box">
+                <div class="password-content_text">Password</div>
+                <div class="view">
+                    <div>Enter your password</div>
+                    <div><i class='fa-solid fa-eye' style='font-size:16px;color:rgba(227, 220, 220, 0.834)'></i></div>
+                </div>
+            </div>
+
+
+            <div class="question">
+                <div class="request">
+                    <div class="tickbox"></div>
+                    <div>Remember me</div>
+                </div>
+
+                <div class="forgot_color">Forgot Password?</div>
+            </div>
+
+            <div class="signin">Sign in</div>
+
+
+        </div>
+
+    </div>
+
+</body>
